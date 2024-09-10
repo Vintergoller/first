@@ -1,4 +1,4 @@
-
+@import url("../fonts/AktivGroteskCorp/stylesheet.css");
 * {
     padding: 0;
     margin: 0;
@@ -90,7 +90,7 @@ h6 {
     font-weight: 400;
 }
 
-@import url("../fonts/AktivGroteskCorp/stylesheet.css");
+
 
 .wrapper{
     display: flex;
@@ -99,41 +99,49 @@ h6 {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
+   
   
 }
-.mainblock__content{
+.mainblock__header{
     position: relative;
+    
     z-index: 50;
-    flex: 1 1 auto;
+   
    font-size: 18px;
-   font-family: 'AktivGroteskCorp';
+   
+   display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
 
 }
 .mainblock{
     min-height: 100vh;
     display: flex;
-
-    justify-content: center;
+    flex-direction: column;
+   
     text-align: center;
     padding: 30px 0px;
- 
-    
+    width: 100%
+   
 }
 
 .container{
     
     
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1400px;
-    flex: 1 1 auto;
-
-   /* width: 100%;
    
+   
+    
+
+   
+    
+    margin: 0 auto;
+    max-width:1400px ; 
+   
+
+   width: 100%;
   flex: 1 1 auto;
-  margin: 0 auto;*/
+  
 }
 .background__video{
     background: url('../video/main-hero1\ -\ Trim.mp4');
@@ -165,6 +173,7 @@ h6 {
 }
 .mainblock__number{
     color: white;
+    font-size: 22px;
     font-family: 'Aktiv Grotesk Corp';
 }
 .mainblock__background{
@@ -178,10 +187,10 @@ h6 {
 }
 
 .mainblock__logo{
-   width: 40px;
-   height: 40px;
+   width: 45px;
+   height: 45px;
    position: relative;
-   bottom:2px;
+   bottom: 0px;
 }
 .mainblock__logo img{
     max-width: 100%;
@@ -189,5 +198,97 @@ h6 {
 
 }
 
+.mainblock__text span{
+    font-size: 62px;
+    color: white;
+}
+.mainblock__content{
+    font-size: 40px;
+    color: rgb(207, 195, 195);
+    display: flex;
+    margin: 300px 0 0 0;
+    max-width: 600px;
+    text-align: start;
+    line-height: 60px;
+    position: relative;
+    z-index: 50;
+    font-family: 'Aktiv Grotesk Corp';
+}
+
+.about__row{
+    display: flex;
+}
+ 
+.about__content{
+    color: white;
+}
+.about{
+    padding: 100px 0;
+    background: black;
+    width: 100%;
+    font-family: 'Aktiv Grotesk Corp';
+}
+.about__header{
+    text-align: center;
+    font-size: 42px;
+    margin: 0 0 30px 0;
+  
+    position: relative;
+}
+.about__body{
+ 
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 26px;
+    font-weight: 400;
+}
+.about__column{
+    border: 1px solid rgba(83, 83, 83, 1);
+    padding: 10px 0;
+}
+.about__item img{
+    display: flex;
+    max-width: 100%;
+    height: 85px;
+    width: 85px;
+    margin: 10px 0 60px 0;
+}
+.about__row{
+    display: flex;
+  
+}
+.about__column{
+    flex: 0 1 33.333%;
+    margin: 0 10px;
+}
+
+.about__item {
+    margin:0 20px;
+    position: relative;
+}
+.about__item::after{
+    content: '';
+    background: url('../img/up-right-arrow.png');
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    
+}
 
 
+
+.about__item p{
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+   
+}
+
+.form{
+    padding: 100px 0;
+    background: #1b1c20;
+    width: 100%;
+    font-family: 'Aktiv Grotesk Corp';
+}
