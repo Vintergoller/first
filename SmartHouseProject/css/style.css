@@ -288,7 +288,62 @@ h6 {
 
 .form{
     padding: 100px 0;
-    background: #1b1c20;
+    background: black;
     width: 100%;
     font-family: 'Aktiv Grotesk Corp';
 }
+
+.form__row{
+    display: flex;
+   
+    
+}
+
+.form__send-message{
+    display: flex;
+    flex-direction: column;
+}
+.form__column{
+
+    flex: 0 1 50%;
+}
+.form__header{
+    font-size: 60px;
+    color: rgb(207, 195, 195);
+    width: 100%;
+}
+
+.form__textbox{
+    background: none;
+    margin: 10px 0;
+    border-bottom: 1px solid #9f9f9f;
+    color: white;
+    padding: 5px 0;
+    width: 100%;
+    padding: 5px 0;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.form__send-message{
+    max-width: 347px;
+    margin-top: 13px;
+    gap: 60px 0;
+}
+
+.form__column:last-child{
+    padding: 0 0 0 300px;
+     flex: 0 1 50%;
+ }
+ .btn-send{
+    height: 70px;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 19px;
+    width: 100%;
+    background: #ECC7B7;
+ }
