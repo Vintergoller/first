@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -89,6 +90,8 @@ h6 {
     font-weight: 400;
 }
 
+@import url("../fonts/AktivGroteskCorp/stylesheet.css");
+
 .wrapper{
     display: flex;
     display: -ms-flexbox;
@@ -103,7 +106,7 @@ h6 {
     z-index: 50;
     flex: 1 1 auto;
    font-size: 18px;
-   
+   font-family: 'AktivGroteskCorp';
 
 }
 .mainblock{
@@ -157,9 +160,12 @@ h6 {
 }
 .menu-top-header__link{
     color: white;
+    font-family: 'Aktiv Grotesk Corp';
+    
 }
 .mainblock__number{
     color: white;
+    font-family: 'Aktiv Grotesk Corp';
 }
 .mainblock__background{
     position: absolute;
@@ -180,4 +186,8 @@ h6 {
 .mainblock__logo img{
     max-width: 100%;
     
+
 }
+
+
+
