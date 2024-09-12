@@ -115,12 +115,12 @@ h6 {
 .mainblock__header{
 
      position: fixed;
-    z-index: 150;
+    z-index: 180;
     font-size: 18px;
   
     left: 0;
     width: 100%;
-    transition: background 2s ease;
+    transition: background 1s ease;
 
     
    
@@ -212,12 +212,23 @@ h6 {
 
 
 
-.mainblock__text span{
+.mainblock__text :first-child{
     font-size: 62px;
     color: white;
     position: relative;
     z-index: 50;
+    font-family: 'Aktiv Grotesk Corp';
 }
+.mainblock__text:last-child{
+  
+    font-size: 40px;
+    color: rgb(207, 195, 195);
+    position: relative;
+    z-index: 50;
+    font-family: 'Aktiv Grotesk Corp';
+}
+
+
 
 
 .about__row{
