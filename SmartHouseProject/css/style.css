@@ -31,6 +31,9 @@ aside {
     display: block;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 html,
 body {
     height: 100%;
@@ -243,8 +246,14 @@ h6 {
     text-align: center;
     font-size: 42px;
     margin: 0 0 40px 0;
-  
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.8s ease 0ms;
     position: relative;
+}
+.about__header._active{
+    opacity: 1;
+    filter: blur(0px);
 }
 .about__body{
  
@@ -894,13 +903,25 @@ color: white;
     font-size: 50px;
     text-align: center;
     margin: 0 0 40px 0;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.8s ease 0ms;
 }
-
+.partners__header._active{
+    opacity: 1;
+    filter: blur(0px);
+}
 
 .mainblock__header.fixed{
     position: fixed;
     background: black;
   
+}
+.solutionBase{
+    padding: 50px 0;
+    background: black;
+    width: 100%;
+    font-family: 'Aktiv Grotesk Corp';
 }
 .solutionBase__section{
     display: block;
@@ -955,8 +976,15 @@ color: white;
 }
 .solutionBase__header{
     margin: 0 0 40px 0;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.8s ease 0ms;
 }
 
+.solutionBase__header._active{
+    opacity: 1;
+    filter: blur(0px);
+}
 @media (max-width:1600px){
     .function__body::before{
         visibility: hidden;
@@ -1341,8 +1369,15 @@ color: white;
 }
 .function__header{
     margin: 0 0 40px 0;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.8s ease 0ms;
 }
-
+.function__header._active{
+    margin: 0 0 40px 0;
+    opacity: 1;
+    filter: blur(0px);
+}
 
 .pulse {
     position: relative;
